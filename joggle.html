@@ -1,0 +1,40 @@
+
+<!-- Doesn't run in IE, CSS grid not really supported yet. This is fine with me. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Joggle</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link href="joggle.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="joggle.js" type="text/javascript"></script>
+  </head>
+  <body onresize="resizeReaction()">
+    <div class="pageContainer">
+      <div id="boardContainer">
+        <div class="joggleBoard">
+          <div class="letterCube a"></div>
+          <div class="letterCube b"></div>
+          <div class="letterCube c"></div>
+          <div class="letterCube d"></div>
+          <div class="letterCube e"></div>
+          <div class="letterCube f"></div>
+          <div class="letterCube g"></div>
+          <div class="letterCube h"></div>
+          <div class="letterCube i"></div>
+          <div class="letterCube j"></div>
+          <div class="letterCube k"></div>
+          <div class="letterCube l"></div>
+          <div class="letterCube m"></div>
+          <div class="letterCube n"></div>
+          <div class="letterCube o"></div>
+          <div class="letterCube p"></div>
+        </div>
+      </div>
+      <div id="gameInfo" style="position: relative; display: inline-block; width: 100%; left: 0px;">
+        <button class="btn" onclick="changeLetters()">New Game</button>
+        <span id="timeRemaining"></span>
+      </div>
+    </div>
+  </body>
+</html>
