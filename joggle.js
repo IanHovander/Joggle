@@ -1,5 +1,16 @@
 $( document ).ready(
   function() {
+    // Register service worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(function(reg) {
+          console.log('Service worker registration succeeded');
+        })
+        .catch(function(error) {
+          console.log('Service worker registration failed', error);
+        });
+    }
+    // Initial resize
     resizeReaction();
   }
 );

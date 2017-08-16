@@ -1,9 +1,20 @@
-
 <!-- Doesn't run in IE, CSS grid not really supported yet. This is fine with me. -->
 <!DOCTYPE html>
-<html>
+<html manifest="manifest.appcache">
   <head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Joggle">
+    <meta name="application-name" content="Joggle">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="msapplication-navbutton-color" content="#eb841f">
+    <meta name="msapplication-starturl" content="/joggle.html">
+    <meta name="theme-color" content="#eb841f">
     <title>Joggle</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="assets/icon192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/icon192.png">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
     <link href="joggle.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

@@ -1,0 +1,21 @@
+{
+  "name": "Joggle",
+  "short_name": "Joggle",
+  "lang": "en",
+  "start_url": "/joggle.html",
+  "display": "standalone",
+  "theme_color": "#eb841f",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "assets/icon144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icon192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
