@@ -19,6 +19,22 @@
     <link href="joggle.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="joggle.js" type="text/javascript"></script>
+	<script>
+		//listen to shake event
+		var shakeEvent = new Shake({threshold: 15});
+		shakeEvent.start();
+		window.addEventListener('shake', function(){
+			alert("Shaked");
+		}, false);
+
+		//stop listening
+		function stopShake(){
+			shakeEvent.stop();
+		}
+
+		//check if shake is supported or not.
+		if(!("ondevicemotion" in window)){alert("Not Supported");}
+	</script>
   </head>
   <body onresize="resizeReaction()">
     <div class="pageContainer">
@@ -41,10 +57,9 @@
           <div class="letterCube o"></div>
           <div class="letterCube p"></div>
         </div>
-      </div>
-      <div id="gameInfo" style="position: relative; display: inline-block; width: 100%; left: 0px;">
-        <button class="btn" onclick="changeLetters()">New Game</button>
-        <span id="timeRemaining"></span>
+        <div id="gameInfo" style="position: relative; display: inline-block; width: 100%; left: 0px;">
+          <button class="btn" onclick="changeLetters()"><span id="timeRemaining">2:00</span></button>
+        </div>
       </div>
     </div>
   </body>

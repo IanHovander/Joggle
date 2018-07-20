@@ -16,12 +16,12 @@ $( document ).ready(
 );
 
 function resizeReaction() {
-  if (window.innerWidth > window.innerHeight) {
+  if (window.innerWidth + 70 > window.innerHeight) {
     var height = window.innerHeight - 65;
     var adjHeight = height - 15;
     if (adjHeight < 300) {
-      var scaleFactor = adjHeight / 300;
-      height = window.innerHeight - (scaleFactor * 60) - 5;
+      var scaleFactor = adjHeight / 305;
+      height = window.innerHeight - (scaleFactor * 60) - 10;
     }
     setBoardSize(height);
   }
@@ -32,7 +32,7 @@ function resizeReaction() {
 
 function setBoardSize(sizeInPixels) {
   console.log(sizeInPixels);
-  var heightAndWidth = sizeInPixels - 15;
+  var heightAndWidth = sizeInPixels - 50;
   if (heightAndWidth < 116) {
     heightAndWidth = 116;
   }
