@@ -32,7 +32,7 @@ function resizeReaction() {
 
 function setBoardSize(sizeInPixels) {
   console.log(sizeInPixels);
-  var heightAndWidth = sizeInPixels - 50;
+  var heightAndWidth = sizeInPixels - 135;
   if (heightAndWidth < 116) {
     heightAndWidth = 116;
   }
