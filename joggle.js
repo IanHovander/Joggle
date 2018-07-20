@@ -14,10 +14,10 @@ $( document ).ready(
     resizeReaction();
 	
 	//listen to shake event
-	var shakeEvent = new Shake({threshold: 5});
+	var shakeEvent = new Shake({threshold: 3});
 	shakeEvent.start();
 	window.addEventListener('shake', function(){
-		alert("Shaked");
+		changeLetters();
 	}, false);
 
 	//stop listening
@@ -26,7 +26,7 @@ $( document ).ready(
 	}
 
 	//check if shake is supported or not.
-	if(!("ondevicemotion" in window)){alert("Not Supported");}
+	if(!("ondevicemotion" in window)){console.log("Not Supported");}
   }
 );
 
