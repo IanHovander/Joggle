@@ -14,7 +14,7 @@ $( document ).ready(
     resizeReaction();
 	
 	//listen to shake event
-	var shakeEvent = new Shake({threshold: 3});
+	var shakeEvent = new Shake({threshold: 4});
 	shakeEvent.start();
 	window.addEventListener('shake', function(){
 		changeLetters();
